@@ -4,7 +4,7 @@
 (iii) Download GloVe word vectors from http://nlp.stanford.edu/data/glove.6B.zip, to the same folder with the lexicons and polarity data.\
 (iv) For sub-problem a(i), run ```wordcount_a1.py```.\
 (v) For sub-problem a(ii), run ```word_embed_gen_a2.py``` to generate word embeddings of the corpus. Then run ```mlp_a2.py``` to train and test an MLP with the embeddings.\
-(vi) For sub-problem a(iii), run ```cross_val_a3.py``` to perform cross validation on the MLP model. Log the performances of each loop. Then run ```permutation_test_a3.py``` to perform statistical comparison between wordcount model and MLP via paired permutation test. (c.f. http://axon.cs.byu.edu/Dan/478/assignments/permutation_test.php)\
+(vi) For sub-problem a(iii), run ```cross_val_a3.py``` to perform cross validation on the MLP model. Log the performances of each loop. Then run ```permutation_test_a3.py``` to perform statistical comparison between wordcount model and MLP via paired permutation test. (c.f. http://axon.cs.byu.edu/Dan/478/assignments/permutation_test.php)
 
 ## Problem description:
 Download the Pang and Lee movie review data.2 Hold out a randomly-selected 400
