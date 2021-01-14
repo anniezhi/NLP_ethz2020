@@ -1,6 +1,9 @@
-# Guide
+## Steps
+(i) Download the suggested dataset. Run ```dataset_split_preproc.py``` for train/test/dev splitting, preprocessing, and vocabulary generation. Preprocessing includes stemming, tokenization, stopword removal, and concatenation of the two texts in dataset for each sample. Vocabulary is built with the most frequent tokens appeared in train set.\
+(ii) Build features for each vocabulary size with ```feature_gen.py```. This converts count of each word in vocab as the feature.\
+(iii) Train and test log-linear model with ```log_linear.py```. To train with L2-penalty, add argument ```-regularization l2```. To tune the level of penalty, add argument ```-C {c_value}```.
 
-# Problem description
+## Problem description
 The next problem will require you to build a classifier and test its properties. Pick a multi-class text classification dataset that is not already tokenized. One example is a dataset of New York Times headlines and topics (Boydstun, 2013).6 Divide your data into training (60%), development (20%), and test sets (20%), if no such division already exists. If your dataset is very large, you may want to focus on a few thousand instances at first.\
 (i) Compare various vocabulary sizes of 10^2, 10^3, 10^4, 10^5, using the most frequent words in each case. Train log-linear models, using feature extraction methods discussed in Lecture 3, for each vocabulary size. Plot the accuracy and macro F-measure on the test set with the increasing vocabulary size.\
 (ii) Train the same set of log-linear models for each vocabulary size but this time, with an L2 penalty on the models’ weights. Tune the regularizer’s coefficient to maximize accuracy on the development set. Again plot the accuracy and macro F-measure on the test set against the increasing vocabulary size.\
