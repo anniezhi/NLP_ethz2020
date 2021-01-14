@@ -1,5 +1,5 @@
 ## Steps
-(i) Move all train files from downloaded polarity data to one folder /train, and all test files to one folder /test.\
+(i) Move all train files from downloaded polarity data to one folder /train, and all test files to one folder /test. Remove the header of the downloaded lexicon files, and only remain the words.\
 (ii) Run ```train_test_sep.py``` under the parent folder of /train and /test.\
 (iii) Download GloVe word vectors from http://nlp.stanford.edu/data/glove.6B.zip, to the same folder with the lexicons and polarity data.\
 (iv) For sub-problem a(i), run ```wordcount_a1.py```.\
